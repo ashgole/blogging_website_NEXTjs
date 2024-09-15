@@ -8,7 +8,9 @@
 
 ## Resource links
 
-webapp link : https://ashabb-myblog-nextjs.vercel.app/
+webapp link : <a href="https://ashabb-myblog-nextjs.vercel.app/" target="_blank">https://ashabb-myblog-nextjs.vercel.app/</a>
+
+
 
 
 ## Tags
