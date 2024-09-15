@@ -4,25 +4,11 @@ import Link from 'next/link'
 import axios from 'axios';
 import { rootPath } from '@/common';
 
-const Home = () => {
+const Home = (props) => {
+    const [blogs, setBlogs] = useState(props.allBlogs);
 
-    const [blogs, setBlogs] = useState([]);
-
-    useEffect(() => {
-        const fetchBlogs = async () => {
-            try {
-                const response = await axios.get(`${rootPath}api/getallblogs`);
-                setBlogs(response.data);
-            } catch (error) {
-                console.error('Error fetching blogs:', error);
-            }
-        };
-
-        fetchBlogs();
-    }, []);
     return (
         <>
-
             <div className={styles.blogContainer}>
                 {blogs.map((post) => (
                     <div key={post.slug} className={styles.blogCard}>
@@ -36,5 +22,15 @@ const Home = () => {
         </>
     )
 }
+
+export async function getServerSideProps(context) {
+    const response = await fetch(`${rootPath}api/getallblogs`);
+    let allBlogs = await response.json()
+
+    return {
+        props: { allBlogs }
+    }
+}
+
 
 export default Home

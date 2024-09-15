@@ -4,32 +4,28 @@ import styles from './Blog.module.css';
 import { rootPath } from '@/common';
 import axios from 'axios';
 
-const Blog = () => {
-  const router = useRouter();
-  const { slug } = router.query;
-
-  const [blog, setBlog] = useState([]);
-
-  useEffect(() => {
-    const fetchBlogs = async () => {
-
-      try {
-        const response = await axios.get(`${rootPath}api/getblog/?slug=${slug}`);
-        setBlog(response.data);
-      } catch (error) {
-        console.error('Error fetching blogs:', error);
-      }
-    };
-
-    fetchBlogs();
-  }, []);
+const Blog = (props) => {
+  const [blog, setBlog] = useState(props.blog);
 
   return (
-    <div className={styles.postContainer}>
-      <div className={styles.postTitle}>{blog.title}</div>
-      <div className={styles.postDescription}>{blog.description}</div>
-    </div>
+    <>
+        <div className={styles.postContainer}>
+        <div className={styles.postTitle}>{blog.title}</div>
+        <div className={styles.postDescription}>{blog.description}</div>
+      </div>
+    </>
   );
 };
+
+export async function getServerSideProps(context) {
+  let {slug} = context.query;
+  const response = await fetch(`${rootPath}api/getblog/?slug=${slug}`);
+  let blog = await response.json()
+  console.log('ok blog', blog)
+  return {
+
+    props: { blog}
+  }
+}
 
 export default Blog;

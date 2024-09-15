@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/index.module.css'
-import Home from './home/Home'
+import Home from './home'
 
 export default function Index() {
   return (
@@ -12,8 +12,6 @@ export default function Index() {
         <meta name="keywords" content="next, nexttrip, trip, react, node, ashabb" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Home />
 
       <footer className={styles.footer} >
         <a
