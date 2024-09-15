@@ -24,7 +24,7 @@ Here are the tags based on what we've used in the project so far:
 
 ## Screenshots
 
-
+![Signup 1](https://github.com/ashgole/blogging_website_NEXTjs/blob/main/screenshots/1.png)
 
 ```
 cd blogging_website_NEXTjs
