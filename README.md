@@ -11,10 +11,9 @@
 webapp link : https://ashabb-myblog-nextjs.vercel.app/
 
 
+## Tags
 
 Here are the tags based on what we've used in the project so far:
-
-## Tags
 
 `Next.js` `blog-website` `blog-app`
 
@@ -25,6 +24,9 @@ Here are the tags based on what we've used in the project so far:
 ## Screenshots
 
 ![Signup 1](https://github.com/ashgole/blogging_website_NEXTjs/blob/main/screenshots/1.png)
+
+
+## how to run
 
 ```
 cd blogging_website_NEXTjs
