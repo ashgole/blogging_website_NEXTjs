@@ -1,15 +1,17 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-// http://localhost:3000/api/hello?slug=first-slug
+// http://localhost:3000/api/getblogdir
 
 import * as fs from 'fs';
 
-export default function handler(req, res) {
-  fs.readdir(`static/json/`, (err, data) => {
-    if (err) {
-      res.status(500).json({ error: "No such blog found..." })
-    }
-    console.log('ok ', data)
-    res.status(200).json(data)
-  })
+export default async function handler(req, res) {
+  let data = await fs.promises.readdir("static/json/");
+  let myFile;
+  let allBlogs = [];
+  for (let i = 0; i < data.length; i++) {
+    const item = data[i]
+    myFile = await fs.promises.readFile(('static/json/' + item), 'utf-8')
+    allBlogs.push(JSON.parse(myFile))
+  }
+  res.status(200).json(allBlogs)
 
 }

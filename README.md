@@ -31,6 +31,7 @@ Here are the tags based on what we've used in the project so far:
 ## how to run
 
 ```
+git lone https://github.com/ashgole/blogging_website_NEXTjs.git
 cd blogging_website_NEXTjs
 npm i
 npm run dev
