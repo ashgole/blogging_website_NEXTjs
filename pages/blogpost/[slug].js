@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import styles from './Blog.module.css';
 import { rootPath } from '@/common';
-import axios from 'axios';
 
 const Blog = (props) => {
   const [blog, setBlog] = useState(props.blog);
