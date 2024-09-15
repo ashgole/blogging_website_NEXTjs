@@ -11,7 +11,7 @@ export default function Navbar() {
 
     return (
         <nav className={styles.navbar}>
-            <div className={styles.navbarLogo}>MyApp</div>
+            <div className={styles.navbarLogo}>ASHABB MyBlog NEXTjs</div>
             <div className={styles.menuIcon} onClick={toggleMenu}>
                 &#9776;
             </div>
