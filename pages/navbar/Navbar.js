@@ -17,7 +17,7 @@ export default function Navbar() {
             </div>
             <ul className={isOpen ? `${styles.navLinks} ${styles.active}` : styles.navLinks}>
                 <Link href='/'> <li className={styles.navItem}>Home</li></Link>
-                <Link href='/blogpost/ash'> <li className={styles.navItem}>Blog</li></Link>
+                <Link href='/blogpost/first-blog'> <li className={styles.navItem}>Blog</li></Link>
                 <Link href='/about'> <li className={styles.navItem}>About</li></Link>
                 <Link href='/contact'> <li className={styles.navItem}>Contact</li></Link>
             </ul>

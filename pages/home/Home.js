@@ -11,7 +11,7 @@ const Home = () => {
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const response = await axios.get(`${rootPath}api/getblogdir`);
+                const response = await axios.get(`${rootPath}api/getallblogs`);
                 setBlogs(response.data);
             } catch (error) {
                 console.error('Error fetching blogs:', error);
