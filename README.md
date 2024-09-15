@@ -8,7 +8,9 @@
 
 ## Resource links
 
-webapp link : <a href="https://ashabb-myblog-nextjs.vercel.app/" target="_blank">https://ashabb-myblog-nextjs.vercel.app/</a>
+webapp : <a href="https://ashabb-myblog-nextjs.vercel.app/" target="_blank">https://ashabb-myblog-nextjs.vercel.app/</a>
+
+Github : <a href="https://github.com/ashgole/blogging_website_NEXTjs" target="_blank">https://github.com/ashgole/blogging_website_NEXTjs</a>
 
 
 
@@ -31,7 +33,7 @@ Here are the tags based on what we've used in the project so far:
 ## how to run
 
 ```
-git lone https://github.com/ashgole/blogging_website_NEXTjs.git
+git clone https://github.com/ashgole/blogging_website_NEXTjs.git
 cd blogging_website_NEXTjs
 npm i
 npm run dev
