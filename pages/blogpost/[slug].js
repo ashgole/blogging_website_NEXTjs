@@ -19,7 +19,6 @@ export async function getServerSideProps(context) {
   let {slug} = context.query;
   const response = await fetch(`${rootPath}api/getblog/?slug=${slug}`);
   let blog = await response.json()
-  console.log('ok blog', blog)
   return {
 
     props: { blog}
