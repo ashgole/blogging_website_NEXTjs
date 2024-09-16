@@ -5,8 +5,8 @@ import Link from 'next/link'
 import { rootPath } from '@/common';
 
 const Home = (props) => {
+    console.log('ok rootPath',rootPath )
     const [blogs, setBlogs] = useState(props.allBlogs);
-    console.log('ok ash',process.env.NEXT_PUBLIC_GLOBAL_ROOTPATH )
     return (
         <>
             <div className={styles.blogContainer}>
@@ -26,7 +26,9 @@ const Home = (props) => {
 }
 
 export async function getServerSideProps(context) {
-    const response = await fetch(`${rootPath}api/getallblogs`);
+
+    console.log('ok ',process.env.NEXT_PUBLIC_GLOBAL_ROOTPATH+'api/getallblogs' )
+    const response = await fetch(process.env.NEXT_PUBLIC_GLOBAL_ROOTPATH+'api/getallblogs');
     if (!response.ok) {
         return {
             props: { allBlogs: "error" }
