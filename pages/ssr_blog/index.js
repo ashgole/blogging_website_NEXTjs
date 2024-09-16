@@ -6,6 +6,7 @@ import { rootPath } from '@/common';
 
 const Home = (props) => {
     const [blogs, setBlogs] = useState(props.allBlogs);
+    console.log('ok ash',process.env.REACT_APP_GLOBAL_ROOTPATH )
     return (
         <>
             <div className={styles.blogContainer}>

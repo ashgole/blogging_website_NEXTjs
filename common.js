@@ -1,7 +1,7 @@
 let rootPath = '';
 if (process.env.NODE_ENV === 'development') {
-  rootPath = 'http://localhost:3000/'
+  rootPath = REACT_APP_LOCAL_ROOTPATH
 } else {
-  rootPath = 'https://ashabb-myblog-nextjs.vercel.app/'
+  rootPath = REACT_APP_GLOBAL_ROOTPATH
 }
 export { rootPath };
