@@ -6,18 +6,19 @@ import { rootPath } from '@/common';
 
 const Home = (props) => {
     const [blogs, setBlogs] = useState(props.allBlogs);
-console.log('ok blogs',blogs )
     return (
         <>
             <div className={styles.blogContainer}>
-                {blogs.map((post) => (
+                {blogs !== 'error' ? blogs.map((post) => (
                     <div key={post.slug} className={styles.blogCard}>
                         <Link href={`/blogpost/${post.slug}`}>
                             <h2 className={styles.blogTitle}>{post.title}</h2>
                         </Link>
                         <p className={styles.blogDescription}>{post.description.substr(0, 120)}...</p>
                     </div>
-                ))}
+                )) :
+                    <div>error while fetching data...</div>
+                }
             </div>
         </>
     )
@@ -25,6 +26,11 @@ console.log('ok blogs',blogs )
 
 export async function getServerSideProps(context) {
     const response = await fetch(`${rootPath}api/getallblogs`);
+    if (!response.ok) {
+        return {
+            props: { allBlogs: "error" }
+        }
+    }
     let allBlogs = await response.json()
 
     return {
