@@ -1,11 +1,11 @@
-//16-9-24
+//16-9-24 ash
 import React, { useEffect, useState } from 'react'
 import styles from './index.module.css'
 import Link from 'next/link'
 import { rootPath } from '@/common';
 
 const Home = (props) => {
-    console.log('ok rootPath',rootPath )
+
     const [blogs, setBlogs] = useState(props.allBlogs);
     return (
         <>
