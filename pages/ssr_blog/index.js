@@ -1,23 +1,12 @@
-import Link from 'next/link';
-import { useState } from 'react';
+//16-9-24
+import React, { useEffect, useState } from 'react'
 import styles from './index.module.css'
+import Link from 'next/link'
+import { rootPath } from '@/common';
 
-// Fetch blogs at build time
-export async function getStaticProps() {
-    const res = await fetch('http://localhost:3000/api/getallblogs');
-    const allBlogs = await res.json();
-
-    return {
-        props: {
-            allBlogs
-        },
-    };
-}
-
-
-
-export default function Home(props) {
+const Home = (props) => {
     const [blogs, setBlogs] = useState(props.allBlogs);
+
     return (
         <>
             <div className={styles.blogContainer}>
@@ -33,3 +22,15 @@ export default function Home(props) {
         </>
     )
 }
+
+export async function getServerSideProps(context) {
+    const response = await fetch(`${rootPath}api/getallblogs`);
+    let allBlogs = await response.json()
+
+    return {
+        props: { allBlogs }
+    }
+}
+
+
+export default Home
