@@ -27,8 +27,7 @@ const Home = (props) => {
 
 export async function getServerSideProps(context) {
 
-    console.log('ok ',process.env.NEXT_PUBLIC_GLOBAL_ROOTPATH+'api/getallblogs' )
-    const response = await fetch(process.env.NEXT_PUBLIC_GLOBAL_ROOTPATH+'api/getallblogs');
+    const response = await fetch(`${rootPath}api/getallblogs`);
     if (!response.ok) {
         return {
             props: { allBlogs: "error" }
