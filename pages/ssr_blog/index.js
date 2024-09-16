@@ -6,7 +6,7 @@ import { rootPath } from '@/common';
 
 const Home = (props) => {
     const [blogs, setBlogs] = useState(props.allBlogs);
-
+console.log('ok blogs',blogs )
     return (
         <>
             <div className={styles.blogContainer}>

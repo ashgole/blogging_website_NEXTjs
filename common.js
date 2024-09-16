@@ -5,10 +5,3 @@ if (process.env.NODE_ENV === 'development') {
   rootPath = 'https://ashabb-myblog-nextjs.vercel.app/'
 }
 export { rootPath };
-
-//  http://localhost:3000/api/getallblogs
-//  http://localhost:3000/api/getblog?slug=first-blog
-
-// https://ashabb-myblog-nextjs.vercel.app/api/getallblogs
-
-// https://www.youtube.com/watch?v=ZvitCMlb9-0
