@@ -7,8 +7,6 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');  // Adjust for your security needs
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
 
-  console.log('ok -------------', )
-  console.log('ok method',req.method )
   let data = await fs.promises.readdir("static/json/");
   let myFile;
   let allBlogs = [];

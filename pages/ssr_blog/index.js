@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import styles from './BlogList.module.css'
+import styles from './index.module.css'
 import Link from 'next/link'
-import axios from 'axios';
 import { rootPath } from '@/common';
 
 const Home = (props) => {
