@@ -17,7 +17,6 @@ export default function Header() {
             </div>
             <ul className={isOpen ? `${styles.navLinks} ${styles.active}` : styles.navLinks}>
                 <Link href='/ssr_blog'> <li className={styles.navItem}>SSR Home</li></Link>
-                {/* <Link href='/ssg_blog'> <li className={styles.navItem}>SSG Home</li></Link> */}
                 <Link href='/blogpost/first-blog'> <li className={styles.navItem}>Blog</li></Link>
                 <Link href='/about'> <li className={styles.navItem}>About</li></Link>
                 <Link href='/contact'> <li className={styles.navItem}>Contact</li></Link>
