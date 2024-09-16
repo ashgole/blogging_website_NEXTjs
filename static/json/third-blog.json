@@ -1,5 +1,6 @@
 {
   "slug": "third-blog",
   "title": "Third Blog Post",
-  "description": "This is a short description of the third blog post."
+  "description": "This is a short description of the third blog post.",
+  "content":"<h1>test</h1>"
 }

@@ -32,7 +32,6 @@ export async function getServerSideProps(context) {
         }
     }
     let allBlogs = await response.json()
-
     return {
         props: { allBlogs }
     }
