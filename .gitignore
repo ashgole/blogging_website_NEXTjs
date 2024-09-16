@@ -1,3 +1,5 @@
 node_modules
 .next
 temp
+
+pages/ssr_blog
