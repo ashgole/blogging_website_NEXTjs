@@ -1,4 +1,4 @@
-//16-9-24 ash 2
+//16-9-24 ash 1
 import React, { useEffect, useState } from 'react'
 import styles from './index.module.css'
 import Link from 'next/link'
