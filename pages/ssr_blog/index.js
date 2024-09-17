@@ -62,7 +62,7 @@ const Home = (props) => {
 
 // SSR fetching for initial blogs
 export  async function getServerSideProps() {
-  const response = await fetch(`http://localhost:3000/api/getallblogs?page=1`);
+  const response = await fetch(`${rootPath}/api/getallblogs?page=1`);
   const allBlogs = await response.ok ? await response.json() : "error";
 
   return {
