@@ -9,7 +9,6 @@ export default async function handler(req, res) {
     try {
       const dirPath = path.join(process.cwd(), 'static/json/');
       const data = await fs.promises.readdir(dirPath);
-      console.log('ok -----------------', )
       let allBlogs = [];
 
       for (let i = 0; i < data.length; i++) {
