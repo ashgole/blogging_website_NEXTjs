@@ -1,14 +1,15 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import fs from 'fs';
 
-
-import * as fs from 'fs';
-
-export default function handler(req, res) {
-  fs.readFile(`static/json/${req.query.slug}.json`, "utf-8", (err, data) => {
-    if (err) {
-      res.status(500).json({ error: "No  such blog found..." })
+export default async function handler(req, res) {
+  if (req.method === 'GET') {
+    try {
+      const myFile = await fs.promises.readFile(`static/json/${req.query.slug}.json`, 'utf-8');
+      res.status(200).json(JSON.parse(myFile))
+    } catch (error) {
+      res.status(500).json({ message: "Error reading file", error })
     }
-    res.status(200).json(JSON.parse(data))
-  })
-
+  }
+  else {
+    res.status(405).json({ message: 'Method not allowed' });
+  }
 }
