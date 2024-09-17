@@ -18,7 +18,7 @@ Github : <a href="https://github.com/ashgole/blogging_website_NEXTjs" target="_b
 
 ## Screenshots
 
-![Signup 1](https://github.com/ashgole/blogging_website_NEXTjs/blob/main/screenshots/1.png)
+![home page](https://github.com/ashgole/blogging_website_NEXTjs/blob/main/screenshots/0.png)
 
 ## how to run
 
