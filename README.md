@@ -12,23 +12,13 @@ webapp : <a href="https://ashabb-myblog-nextjs.vercel.app/" target="_blank">http
 
 Github : <a href="https://github.com/ashgole/blogging_website_NEXTjs" target="_blank">https://github.com/ashgole/blogging_website_NEXTjs</a>
 
-
-
-
 ## Tags
 
-Here are the tags based on what we've used in the project so far:
-
-`Next.js` `blog-website` `blog-app`
-
-`frontend` - `Reactjs` `Next.js routing` `dynamic-routing` `css-modules` `responsive-design` `components` `markdown` `Link` `useRouter`
-
-`backend` - `API integration` `SSR (Server-Side Rendering)` `SSG (Static Site Generation)` `dynamic-content`
+`React.js` `Next.js` `Static Site Generation (SSG)` `Server-side Rendering (SSR)` `API Routes` `getServerSideProps` `getStaticProps` `Infinite Scroll` `TailwindCSS` `CSS Modules` `Axios` `CRUD Operations` `Dynamic Routing` `File System (fs)` `Edge Functions` `Vercel Deployment` `Authentication` `Error Handling` `Linking (Link)` `Environment Variables` `JSON File Handling` `Fetch API`
 
 ## Screenshots
 
 ![Signup 1](https://github.com/ashgole/blogging_website_NEXTjs/blob/main/screenshots/1.png)
-
 
 ## how to run
 
