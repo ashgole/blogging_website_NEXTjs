@@ -1,6 +1,6 @@
 {
-  "slug": "first-blog1",
-  "title": "Emily Thompson 11",
+  "slug": "second",
+  "title": "second",
   "description": "This is a short description of the first blog post.",
   "content":"<p>Lorem ipsum dolor <b>sit</b> amet consectetur adipisicing elit. <strike>Enim ex a</strike> veniam, molestiae praesentium culpa, mollitia officiis quas quia vitae voluptates</p>"
 }
