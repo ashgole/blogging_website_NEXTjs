@@ -8,10 +8,10 @@ export default async function handler(req, res) {
     if (!name || !email || !message) {
       return res.status(400).json({ error: 'All fields are required' });
     }
-console.log('ok ashish', )
     try {
       // Define the directory and file path
       const contactDir = path.join(process.cwd(), 'static', 'contacts');
+      console.log('ok ashish contactDir',contactDir )
 
       // Ensure the directory exists
       if (!fs.existsSync(contactDir)) {
