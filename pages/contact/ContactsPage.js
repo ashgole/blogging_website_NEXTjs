@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import ContactList from './ContactList';
+import ContactList from './ContactList';
 import axios from 'axios';
 import { rootPath } from '@/utils/constants';
 
@@ -9,7 +9,7 @@ const ContactsPage = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       const response = await axios.get(`${rootPath}/api/contact/getContact`);
-      console.log('ok response',response )
+      console.log('ok response', response)
       setContacts(response.data);
     };
     fetchContacts();
@@ -21,7 +21,9 @@ const ContactsPage = () => {
     <div className="container mx-auto">
       ash
       <h1 className="text-3xl font-bold text-center my-8">Contact List</h1>
-      {/* <ContactList contacts={contacts} setContacts={setContacts} /> */}
+      {contacts ?
+        <ContactList contacts={contacts} setContacts={setContacts} /> :
+        <div>Data npt found...</div>}
     </div>
   );
 };
