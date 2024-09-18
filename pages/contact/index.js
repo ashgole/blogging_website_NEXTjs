@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-// import ContactsPage from './ContactsPage';
+import ContactsPage from './ContactsPage';
 import { rootPath } from '@/utils/constants';
 
 const ContactForm = () => {
@@ -98,7 +98,7 @@ const ContactForm = () => {
         </form>
         {responseMsg && <p>{responseMsg}</p>}
       </div>
-      {/* <ContactsPage /> */}
+      <ContactsPage />
     </>
   );
 };
