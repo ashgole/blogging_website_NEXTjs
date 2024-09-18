@@ -28,7 +28,6 @@ const ContactForm = () => {
 
       if (response.status === 200) {
         setResponseMsg('Form submitted successfully');
-        console.log('Form submitted successfully')
         // setFormData({ name: '', email: '', message: '' }); // Reset the form fields
       } else {
         setResponseMsg(response.data.error || 'Error submitting the form');

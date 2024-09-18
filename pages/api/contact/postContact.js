@@ -28,11 +28,10 @@ export default async function handler(req, res) {
         message,
         timestamp: new Date().toISOString(),
       };
-      console.log('ok ashish contactData',contactData )
 
       // Write the contact data to a new file
+      //TODO : fix error here
       fs.writeFileSync(filePath, JSON.stringify(contactData, null, 2), 'utf-8');
-      console.log('ok ashish file written' )
 
       // Respond with success
       res.status(200).json({ message: 'Contact submission successful' });
