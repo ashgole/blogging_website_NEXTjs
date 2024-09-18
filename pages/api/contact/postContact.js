@@ -11,7 +11,6 @@ export default async function handler(req, res) {
     try {
       // Define the directory and file path
       const contactDir = path.join(process.cwd(), 'static', 'contacts');
-      console.log('ok ashish contactDir',contactDir )
 
       // Ensure the directory exists
       if (!fs.existsSync(contactDir)) {
@@ -21,6 +20,7 @@ export default async function handler(req, res) {
       // Create a unique file name based on timestamp
       const timestamp = Date.now();
       const filePath = path.join(contactDir, `${timestamp}.json`);
+      console.log('ok ashish filePath',filePath )
 
       // Create the contact object
       const contactData = {
@@ -29,6 +29,7 @@ export default async function handler(req, res) {
         message,
         timestamp: new Date().toISOString(),
       };
+      console.log('ok ashish contactData',contactData )
 
       // Write the contact data to a new file
       fs.writeFileSync(filePath, JSON.stringify(contactData, null, 2), 'utf-8');
