@@ -12,7 +12,7 @@ const Home = (props) => {
 
   const fetchData = async () => {
     // Fetch the next page of blogs
-    const response = await fetch(`/api/getallblogs?page=${page}`);
+    const response = await fetch(`/api/blog/getallblogs?page=${page}`);
     if (response.ok) {
       const newBlogs = await response.json();
 
