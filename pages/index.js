@@ -28,6 +28,8 @@ const Home = (props) => {
   };
 
   return (
+    <>
+    <button class="rounded-full  bg-blue-500">Save Changes</button>
     <InfiniteScroll
       dataLength={blogs.length} // Length of current blogs
       next={fetchData} // Function to fetch more data
@@ -59,6 +61,7 @@ const Home = (props) => {
         ))}
       </div>
     </InfiniteScroll>
+    </>
   );
 };
 
