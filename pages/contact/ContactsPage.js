@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ContactList from './ContactList';
+// import ContactList from './ContactList';
 import axios from 'axios';
 import { rootPath } from '@/utils/constants';
 
