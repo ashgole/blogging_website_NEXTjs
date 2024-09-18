@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import ContactsPage from './ContactsPage';
+import { rootPath } from '@/utils/constants';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -19,7 +20,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/api/contact/postContact', formData, {
+      const response = await axios.post(`${rootPath}/api/contact/postContact`, formData, {
         headers: {
           'Content-Type': 'application/json',
         },

@@ -1,12 +1,13 @@
 import React from 'react';
 import axios from 'axios';
+import { rootPath } from '@/utils/constants';
 
 const ContactList = ({ contacts,  setContacts }) => {
 
     const handleDelete = async (id) => {
         try {
             // Make API call to delete the contact from the server
-            const response = await axios.delete(`http://localhost:3000/api/contact/deleteContact?id=${id}`);
+            const response = await axios.delete(`${rootPath}/api/contact/deleteContact?id=${id}`);
             if (response.status === 200) {
                 // If the API call is successful, remove the contact from the local state
                 setContacts(contacts.filter(contact => contact.id !== id));
