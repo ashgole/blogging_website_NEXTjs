@@ -20,7 +20,6 @@ export default async function handler(req, res) {
       // Create a unique file name based on timestamp
       const timestamp = Date.now();
       const filePath = path.join(contactDir, `${timestamp}.json`);
-      console.log('ok ashish filePath',filePath )
 
       // Create the contact object
       const contactData = {
@@ -33,6 +32,7 @@ export default async function handler(req, res) {
 
       // Write the contact data to a new file
       fs.writeFileSync(filePath, JSON.stringify(contactData, null, 2), 'utf-8');
+      console.log('ok ashish file written' )
 
       // Respond with success
       res.status(200).json({ message: 'Contact submission successful' });
