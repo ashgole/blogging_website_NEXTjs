@@ -9,6 +9,7 @@ const ContactsPage = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       const response = await axios.get(`${rootPath}/api/contact/getContact`);
+      console.log('ok response',response )
       setContacts(response.data);
     };
     fetchContacts();
