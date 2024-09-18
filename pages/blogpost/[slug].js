@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Blog.module.css';
-import { rootPath } from '@/common';
 import DangerouslySetInnerHTML from '@/components/dangerouslySetInnerHTML/DangerouslySetInnerHTML';
+import { rootPath } from '@/utils/constants';
 
 const Blog = (props) => {
   const [blog, setBlog] = useState(props.blog);

@@ -3,7 +3,7 @@ import styles from './index.module.css'
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import { rootPath } from '@/common';
+import { rootPath } from '@/utils/constants';
 
 const Home = (props) => {
   const [blogs, setBlogs] = useState(props.allBlogs); // Initial blogs

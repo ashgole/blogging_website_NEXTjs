@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './index.module.css'
 import Link from 'next/link'
-import { rootPath } from '@/common';
+import { rootPath } from '@/utils/constants';
 
 const Home = (props) => {
 
