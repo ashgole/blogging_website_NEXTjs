@@ -1,0 +1,57 @@
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+
+  .navbarLogo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .menuIcon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .navItem a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  .active {
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .navLinks {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: #333;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+    }
+
+    .menuIcon {
+      display: block;
+    }
+
+    .active {
+      display: flex;
+    }
+  }
