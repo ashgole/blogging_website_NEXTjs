@@ -5,9 +5,9 @@ export default async function handler(req, res) {
   if (req.method === 'GET') {
     try {
       const page = req.query.page ? parseInt(req.query.page) : 1; // Get page number
-      const limit = 3; // Number of blogs per page
+      const limit = 4; // Number of blogs per page
 
-      const dirPath = path.join(process.cwd(), 'static/json/');
+      const dirPath = path.join(process.cwd(), 'static/blogs/');
       const data = await fs.promises.readdir(dirPath);
 
       let allBlogs = [];

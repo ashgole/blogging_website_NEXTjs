@@ -29,7 +29,6 @@ const Home = (props) => {
 
   return (
     <>
-    <button class="rounded-full  bg-blue-500">Save Changes</button>
     <InfiniteScroll
       dataLength={blogs.length} // Length of current blogs
       next={fetchData} // Function to fetch more data
@@ -67,7 +66,7 @@ const Home = (props) => {
 
 // SSR fetching for initial blogs
 export async function getServerSideProps() {
-  const response = await fetch(`${rootPath}/api/getallblogs?page=1`);
+  const response = await fetch(`${rootPath}/api/blog/getallblogs?page=1`);
   const allBlogs = await response.ok ? await response.json() : "error";
 
   return {

@@ -5,7 +5,6 @@ import DangerouslySetInnerHTML from '@/components/dangerouslySetInnerHTML/Danger
 
 const Blog = (props) => {
   const [blog, setBlog] = useState(props.blog);
-
   return (
     <>
       <div className={styles.postContainer}>
@@ -19,7 +18,7 @@ const Blog = (props) => {
 
 export async function getServerSideProps(context) {
   let { slug } = context.query;
-  const response = await fetch(`${rootPath}api/getblog/?slug=${slug}`);
+  const response = await fetch(`${rootPath}api/blog/getblog/?slug=${slug}`);
   let blog = await response.json()
   return {
 
