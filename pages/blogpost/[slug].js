@@ -18,7 +18,7 @@ const Blog = (props) => {
 
 export async function getServerSideProps(context) {
   let { slug } = context.query;
-  const response = await fetch(`${rootPath}api/blog/getblog/?slug=${slug}`);
+  const response = await fetch(`${rootPath}/api/blog/getblog/?slug=${slug}`);
   let blog = await response.json()
   return {
 
