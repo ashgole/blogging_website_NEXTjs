@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import ContactList from './ContactList';
 import axios from 'axios';
 import { rootPath } from '@/utils/constants';
+import ContactList from './ContactList';
 
 const ContactsPage = () => {
   const [contacts, setContacts] = useState([]);
@@ -9,7 +9,6 @@ const ContactsPage = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       const response = await axios.get(`${rootPath}/api/contact/getContact`);
-      console.log('ok response', response)
       setContacts(response.data);
     };
     fetchContacts();

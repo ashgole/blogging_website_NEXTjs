@@ -22,7 +22,7 @@ const ContactList = ({ contacts,  setContacts }) => {
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-            {contacts.map((contact, index) => (
+            {contacts && contacts.map((contact, index) => (
                 <div key={index} className="relative bg-white shadow-md p-4 rounded-lg">
                     {/* Delete Button */}
                     <button
