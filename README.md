@@ -3,8 +3,8 @@
 </h1>
 
 # ASHABB Blogging using NEXTjs
-
-### This Project is built only for educationl purpose
+ 
+### We're building a blog website with Next.js, featuring a homepage that lists multiple blog posts with short descriptions. Each post has its own dynamic page using Next.js routing. We've styled the site for a clean, responsive design and created reusable components to manage the blog content efficiently.
 
 ## Resource links
 
