@@ -2,7 +2,7 @@
 <a href="https://ashabb.netlify.app/" target="_blank"> We offer freelance web development using MERN, NEXTjs and ThreeJS.</a>
 </h1>
 
-# ASHABB Blogging using NEXTjs
+# ASHABB Blogging App using NEXTjs
  
 ### We're building a blog website with Next.js, featuring a homepage that lists multiple blog posts with short descriptions. Each post has its own dynamic page using Next.js routing. We've styled the site for a clean, responsive design and created reusable components to manage the blog content efficiently.
 
