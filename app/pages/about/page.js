@@ -29,10 +29,7 @@ const About = () => {
         </ul>
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Upcoming Features:</h2>
         <ul className="list-disc list-inside text-gray-700">
-          <li>Integration of MongoDB for persistent data storage</li>
-          <li>Enhanced user authentication and authorization</li>
-          <li>Improved SEO capabilities for blog posts</li>
-          <li>Advanced analytics for user engagement tracking</li>
+          <li>we are going to add form page with CRUD operation</li>
         </ul>
       </div>
     </div>

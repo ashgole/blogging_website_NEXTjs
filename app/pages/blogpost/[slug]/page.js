@@ -11,8 +11,11 @@ const Blogpost = async ({ params }) => {
 
       <div className="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-6">
         <h1 className="text-4xl font-bold text-gray-800 mb-4 break-words ">{blog[0].title}</h1>
-        <p className="text-gray-600 leading-relaxed break-words ">{blog[0].description}</p>
-      </div>
+        <div
+          className="text-gray-600 leading-relaxed break-words"
+          dangerouslySetInnerHTML={{ __html: blog[0].description }}
+        />
+       </div>
     </div>
   );
 }

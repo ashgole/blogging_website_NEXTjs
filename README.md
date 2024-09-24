@@ -3,7 +3,7 @@
 </h1>
 
 # ASHABB Blogging App using NEXTjs
- 
+
 ### We're building a blog website with Next.js, featuring a homepage that lists multiple blog posts with short descriptions. Each post has its own dynamic page using Next.js routing. We've styled the site for a clean, responsive design and created reusable components to manage the blog content efficiently.
 
 ## Resource links
@@ -18,7 +18,9 @@ Github : <a href="https://github.com/ashgole/blogging_website_NEXTjs" target="_b
 
 ## Screenshots
 
-![home page](https://github.com/ashgole/blogging_website_NEXTjs/blob/main/screenshots/0.png)
+![page 1](https://github.com/ashgole/blogging_website_NEXTjs/blob/main/screenshots/0.png)
+![page 2](https://github.com/ashgole/blogging_website_NEXTjs/blob/main/screenshots/1.png)
+![page 3](https://github.com/ashgole/blogging_website_NEXTjs/blob/main/screenshots/2.png)
 
 ## how to run
 
