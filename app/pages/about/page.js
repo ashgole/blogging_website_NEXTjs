@@ -9,6 +9,7 @@ const About = () => {
       </h3>
       <p className="mb-4">
         <a
+        target="_blank"
           href="https://ashabb.netlify.app/"
           className="text-blue-500 hover:underline"
         >
