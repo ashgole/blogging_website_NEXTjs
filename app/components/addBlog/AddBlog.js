@@ -19,7 +19,6 @@ const AddBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        console.log('ok formData',formData )
       await addBlog(formData);
       setResponseMsg('Blog added successfully!');
       setFormData({ title: '', description: '' }); // Reset form

@@ -19,9 +19,8 @@ export const addBlog = async (blogData) => {
   return await response.json();
 };
 
-
 export const readBlogs = async (title = '') => {
-  const res = await fetch(`http://localhost:3000/api/blog?title=${title}`, { cache: 'no-store' });
+  const res = await fetch(`${rootPath}/api/blog?title=${title}`, { cache: 'no-store' });
 
   if (!res.ok) {
     throw new Error('Failed to fetch products');

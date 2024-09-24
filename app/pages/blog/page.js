@@ -1,4 +1,4 @@
-// http://localhost:3000/pages/blog
+
 
 import { readBlogs } from '@/app/utils/api';
 import Link from 'next/link';
