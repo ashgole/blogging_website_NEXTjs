@@ -4,6 +4,18 @@ const About = () => {
   return (
     <div className="container mx-auto p-6 bg-gray-100 min-h-screen">
       <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-6">
+      <h3 className="text-2xl font-semibold mb-4">
+        A Full Stack Developer with a skill set in MERN, Next.js, and Three.js.
+      </h3>
+      <p className="mb-4">
+        <a
+          href="https://ashabb.netlify.app/"
+          className="text-blue-500 hover:underline"
+        >
+          We offer freelance web development using MERN, Next.js, and Three.js.
+        </a>
+      </p>
+
         <h1 className="text-3xl font-bold text-gray-800 mb-4">About This Project</h1>
         <p className="text-gray-700 mb-6">
           This is a blogging website built to provide a seamless experience for reading and managing blog posts.
