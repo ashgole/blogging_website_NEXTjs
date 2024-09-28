@@ -11,8 +11,8 @@ const Header = () => {
   // Helper function to dynamically apply active class
   const linkClasses = (path) =>
     pathname === path
-      ? 'text-white font-bold'
-      : 'text-white hover:text-gray-300';
+      ? 'block text-white font-bold'
+      : 'block text-white hover:text-gray-300';
 
   return (
     <header className="bg-blue-600 p-4 sticky top-0">
@@ -42,6 +42,8 @@ const Header = () => {
           <Link href="/pages/about" className={linkClasses('/pages/about')}>About</Link>
           <Link href="/pages/contactus" className={linkClasses('/pages/contactus')}>Contact Us</Link>
         </nav>
+
+
       )}
     </header>
   );
