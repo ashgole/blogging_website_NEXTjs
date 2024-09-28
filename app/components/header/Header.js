@@ -1,11 +1,18 @@
-
 "use client";
 // components/Header.js
 import Link from 'next/link';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname(); // Get the current pathname
+
+  // Helper function to dynamically apply active class
+  const linkClasses = (path) =>
+    pathname === path
+      ? 'text-white font-bold'
+      : 'text-white hover:text-gray-300';
 
   return (
     <header className="bg-blue-600 p-4 sticky top-0">
@@ -21,19 +28,19 @@ const Header = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-4">
-          <Link href="/" className="text-white hover:text-gray-300">Home</Link>
-          <Link href="/pages/blogpost/new" className="text-white hover:text-gray-300">Blog</Link>
-          <Link href="/pages/about" className="text-white hover:text-gray-300">About</Link>
-          <Link href="/pages/contactus" className="text-white hover:text-gray-300">Contact us</Link>
+          <Link href="/" className={linkClasses('/')}>Home</Link>
+           <Link href="/pages/about" className={linkClasses('/pages/about')}>About</Link>
+          <Link href="/pages/contactus" className={linkClasses('/pages/contactus')}>Contact Us</Link>
         </nav>
       </div>
+      {/* Mobile Navigation */}
       {isOpen && (
         <nav className="mt-4 space-y-2 md:hidden">
-          <Link href="/" className="text-white hover:text-gray-300">Home</Link>
-          <Link href="/pages/blogpost/new" className="block text-white">Blog</Link>
-          <Link href="/pages/about" className="block text-white">About</Link>
-          <Link href="/pages/contactus" className="block text-white">Conatct us</Link>
+          <Link href="/" className={linkClasses('/')}>Home</Link>
+          <Link href="/pages/about" className={linkClasses('/pages/about')}>About</Link>
+          <Link href="/pages/contactus" className={linkClasses('/pages/contactus')}>Contact Us</Link>
         </nav>
       )}
     </header>
