@@ -19,10 +19,10 @@ const Blog = async () => {
               <h2 className="text-2xl font-bold text-gray-800 hover:text-blue-500 transition-colors break-words ">
                 {post.title}
               </h2>
-            </Link>
             <p className="break-words text-gray-600 mt-4">
               {post.description.substr(0, 120)}...
             </p>
+            </Link>
           </div>
         )) :
           <div className="text-center text-red-500">Error while fetching data...</div>
