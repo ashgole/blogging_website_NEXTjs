@@ -10,7 +10,7 @@ const About = () => {
       <p className="mb-4">
         <a
         target="_blank"
-          href="https://ashabb.netlify.app/"
+          href="https://ashabb.vercel.app/"
           className="text-blue-500 hover:underline"
         >
           We offer freelance web development using MERN, Next.js, and Three.js.
