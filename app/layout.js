@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/svg+xml" href="/logo.jpg" />
+      <link rel="icon" type="image/svg+xml" href="/logo.ico" />
       </head>
       <body suppressHydrationWarning={true}
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
