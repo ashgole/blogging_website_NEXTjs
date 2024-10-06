@@ -1,5 +1,8 @@
+<p align="center">
+  <img src="https://www.ashabb.com/logo.jpg" alt="ASHABB logo" />
+</p>
 <h1 align='center'>
-<a href="https://www.ashabb.com" target="_blank"> We offer freelance web development using MERN, NextJS and ThreeJS.</a>
+<a href="https://ashabb.vercel.app/" target="_blank"> We offer freelance web development using <br/> MERN, NextJS and ThreeJS.</a>
 </h1>
 
 # ASHABB Blogging App using NEXTjs
