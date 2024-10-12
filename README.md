@@ -1,11 +1,11 @@
-<a href="https://www.ashabb.com" target="_blank">
-            <p align="center">
-              <img src="https://www.ashabb.com/logo.ico" alt="ASHABB logo" />
-            </p>
-            <h1 align='center'>
-              We offer freelance web development using <br /> MERN, NextJS and ThreeJS.
-            </h1>
-          </a>
+<a href="https://www.ashabb.com" target="_blank"> 
+  <p align="center">
+  <img src="https://www.ashabb.com/logo.jpg" alt="ASHABB logo" />
+</p>
+<h1 align='center'>
+We offer freelance web development using <br/> MERN, NextJS and ThreeJS.
+</h1>
+</a>
 
 # ASHABB Blogging App using NEXTjs
 
